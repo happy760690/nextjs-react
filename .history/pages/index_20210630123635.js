@@ -8,9 +8,6 @@ import Alert from '../components/alert'
 import { getSortedPostsData } from '../lib/posts'
 import useSWR from "swr";
 
-const fetcher = url => fetch(url).then(res => res.json());
-
-
 // 静态生成
 export async function getStaticProps(){
   const allPostsData = getSortedPostsData()
@@ -22,24 +19,19 @@ export async function getStaticProps(){
 }
 
 // 服务侧获取数据
-// export async function getServerSideProps(context) {
-//   return {
-//     props: {
-//       // props for your component
-//     }
-//   }
-// }
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      // props for your component
+    }
+  }
+}
 
 export default function Home({ allPostsData }) {
   const { data, error } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",
     fetcher
   );
-
-  if (error) return "An error has occurred.";
-  if (!data) return "Loading...";
-
-  console.log(data)
 
   return (
     <Layout home>
@@ -73,18 +65,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
-
-      <div>
-        {data.map(({id, title}) => (
-            <p>{id}{title}</p>
-        ))}
-        {/* {data[0]} */}
-        {/* <h1>{data}</h1> */}
-        {/* <p>{data.description}</p> */}
-        {/* <strong>👀 {data.subscribers_count}</strong>{" "} */}
-        {/* <strong>✨ {data.stargazers_count}</strong>{" "} */}
-        {/* <strong>🍴 {data.forks_count}</strong> */}
-      </div>
     </Layout>
   )
 }

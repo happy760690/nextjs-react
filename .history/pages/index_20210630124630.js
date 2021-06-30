@@ -76,7 +76,7 @@ export default function Home({ allPostsData }) {
 
       <div>
         {data.map(({id, title}) => (
-            <p>{id}{title}</p>
+            <span>title</span>
         ))}
         {/* {data[0]} */}
         {/* <h1>{data}</h1> */}

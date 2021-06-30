@@ -39,8 +39,6 @@ export default function Home({ allPostsData }) {
   if (error) return "An error has occurred.";
   if (!data) return "Loading...";
 
-  console.log(data)
-
   return (
     <Layout home>
       <Head>
@@ -75,10 +73,6 @@ export default function Home({ allPostsData }) {
       </section>
 
       <div>
-        {data.map(({id, title}) => (
-            <p>{id}{title}</p>
-        ))}
-        {/* {data[0]} */}
         {/* <h1>{data}</h1> */}
         {/* <p>{data.description}</p> */}
         {/* <strong>👀 {data.subscribers_count}</strong>{" "} */}
