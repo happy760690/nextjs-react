@@ -58,9 +58,9 @@ export default function Home({ allPostsData }) {
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
+              {id}
+              <br />
+              {date}
             </li>
           ))}
         </ul>
