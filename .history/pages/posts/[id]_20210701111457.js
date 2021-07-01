@@ -14,7 +14,7 @@ export default function Post({ postData }) {
       <Layout>
         {/* Add this <Head> tag */}
         <Head>
-            <title>{postData.title}</title>
+            {/* <title>{postData.title}]]]]</title> */}
         </Head>
 
         {postData.title}
