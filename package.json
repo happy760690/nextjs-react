@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
     "next": "11.0.1",
     "react": "17.0.2",

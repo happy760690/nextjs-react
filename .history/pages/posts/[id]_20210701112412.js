@@ -22,8 +22,7 @@ export default function Post({ postData }) {
         <br />
         {postData.id}
         <br />
-        {/* Replace {postData.date} with this */}
-        <Date dateString={postData.date} />
+        {postData.date}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
       </Layout>
     )
