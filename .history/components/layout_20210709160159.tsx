@@ -32,8 +32,8 @@ export default function Layout({ children, home }: {
         <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no,minimal-ui,maximum-scale=1.0,minimum-scale=1.0"></meta>
         <meta name="full-screen" content="yes"></meta>
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta http-equiv="Cache-Control" content="no-transform"/>
-        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        {/* <meta http-equiv="Cache-Control" content="no-transform"/> */}
+        {/* <meta http-equiv="Cache-Control" content="no-siteapp" /> */}
         <meta name="applicable-device" content="mobile"></meta>
         <meta name="location" content="province=上海;city=上海;coord=121.480756,31.235991"></meta>
 
@@ -41,7 +41,7 @@ export default function Layout({ children, home }: {
 
 
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0"></meta>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        {/* <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="format-detection" content="telephone=no" />

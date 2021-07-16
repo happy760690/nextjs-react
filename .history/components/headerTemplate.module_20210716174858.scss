@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 $distance-outermost;
+    color: $color-text-main;
+    background-color: $color-bg-white;
+    border-bottom: 1px solid $color-bg-white;
+    height: 50px;
+}
+
+
+// .header {
+//     position: relative;
+//     height: 1.17rem;
+//     line-height: 1.1rem;
+//     overflow: hidden
+// }
+
+.header .go-back {
+    position: absolute;
+    left: .15rem
+}
+
+.header .go-back a:hover {
+    text-decoration: none
+}
+
+.header .go-back .icon-left {
+    color: #666
+}

@@ -1,0 +1,25 @@
+{
+    "redirects": [
+      { "src": "/userabc", "dest": "/api/hello", "permanent": false },
+      {
+        "source": "/:path((?!uk/).*)",
+        "has": [
+          {
+            "type": "header",
+            "key": "x-vercel-ip-country",
+            "value": "GB"
+          }
+        ],
+        "destination": "/uk/:path*",
+        "permanent": false
+      }
+    ],
+    "rewrites": [{ "source": "/product/:id", "destination": "/api/hello" }],
+    "routes": [
+        {
+          "src": "/abcdef/(.*)",
+          "headers": { "Location": "/api/hello" },
+          "status": 307
+        }
+      ]
+  }
