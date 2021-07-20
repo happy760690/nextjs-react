@@ -42,18 +42,10 @@ module.exports = {
   //     },
   //   ]
   // },
-  // async rewrites() { // 通过重写url方式加载
-  //   return [
-  //     {
-  //       source: '/deal-record-*.html',
-  //       destination: '/api/hello',
-  //     },
-  //   ]
-  // },
   async rewrites() { // 通过重写url方式加载
     return [
       {
-        source: '/deal-record-:id',
+        source: '/deal-record-*.html',
         destination: '/api/hello',
       },
     ]

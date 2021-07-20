@@ -53,7 +53,7 @@ module.exports = {
   async rewrites() { // 通过重写url方式加载
     return [
       {
-        source: '/deal-record-:id',
+        source: '/eal\-record\-:record*',
         destination: '/api/hello',
       },
     ]
