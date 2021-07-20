@@ -1,0 +1,39 @@
+.cardWrap{
+    background: #fff;
+    height: 205px;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.left{
+    width: 75px;
+    height: 93px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cardTop{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.top{
+    font-size: 16px;
+    color: $color-text-main;
+    line-height: 22px;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    .numberWrap{
+        background-color: red;
+    }
+}

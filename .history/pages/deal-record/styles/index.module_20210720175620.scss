@@ -1,0 +1,130 @@
+.cardWrap{
+    background: #fff;
+    // height: 205px;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.left{
+    width: 75px;
+    height: 93px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cardTop{
+    display: flex;
+    flex-direction: row;
+    flex: 1
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;;
+    margin-left: 16px;
+    flex: 1;
+}
+
+.top{
+    font-size: 16px;
+    color: $color-text-main;
+    line-height: 22px;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .numBottom{
+        width: 48px;
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: normal;
+        color: #8D9799;
+        line-height: 17px;
+    }
+}
+.numberWrap{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-top: 6px;
+    align-items: flex-end;
+    .number{
+        // height: 25px;
+        // font-size: 21px;
+        // color: #031A1F;
+        // font-weight: bold;
+        // width: 43px;
+        height: 25px;
+        font-size: 21px;
+        font-family: DIN;
+        font-weight: bold;
+        color: #031A1F;
+        line-height: 25px;
+        // display: flex;
+        // align-items: center;
+    }
+    .unit{
+        // display: flex;
+        // align-items: center;
+        height: 17px;
+        font-size: 12px;
+        color: #031A1F;
+    }
+}
+.li{
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.buildingInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    .title{
+        width: 52px;
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: normal;
+        color: #8D9799;
+        line-height: 17px;
+        margin-right: 8px;
+    }
+    .info{
+        width: 162px;
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: normal;
+        color: #8D9799;
+        line-height: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.cardBottom{
+    margin-top: 16px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 313px;
+    height: 64px;
+    background: #F5F8F9;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #031A1F;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 2;
+}

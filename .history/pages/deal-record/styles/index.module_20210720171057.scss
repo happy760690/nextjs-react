@@ -1,0 +1,72 @@
+.cardWrap{
+    background: #fff;
+    height: 205px;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.left{
+    width: 75px;
+    height: 93px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cardTop{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.top{
+    font-size: 16px;
+    color: $color-text-main;
+    line-height: 22px;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    .numBottom{
+        width: 48px;
+        height: 17px;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: normal;
+        color: #8D9799;
+        line-height: 17px;
+    }
+}
+.numberWrap{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-top: 6px;
+    align-items: flex-end;
+    .number{
+        height: 25px;
+        font-size: 21px;
+        color: #031A1F;
+        font-weight: bold;
+        // display: flex;
+        // align-items: center;
+    }
+    .unit{
+        // display: flex;
+        // align-items: center;
+        height: 17px;
+        font-size: 12px;
+        color: #031A1F;
+    }
+}
+.li{
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+}
